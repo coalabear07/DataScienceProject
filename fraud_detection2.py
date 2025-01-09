@@ -7,13 +7,13 @@ Created on Thu Jan  9 12:59:11 2025
 
 import numpy as np
 #import xgboost
-import pickle
+import joblib
 import streamlit as st
 from datetime import datetime
 
 # Load the trained model and scaler
-loaded_model = pickle.load(open("xgboost.sav", "rb"))
-loaded_scaler = pickle.load(open("scaler.sav", "rb"))
+loaded_model = joblib.load(open("xgboost.sav", "rb"))
+loaded_scaler = joblib.load(open("scaler.sav", "rb"))
 
 # Function for fraud detection
 def fraud_detection(input_data):
