@@ -12,7 +12,7 @@ import streamlit as st
 from datetime import datetime
 
 # Load the trained model and scaler
-loaded_model = joblib.load(open("xgboost.sav", "rb"))
+loaded_model = joblib.load(open("https://github.com/coalabear07/DataScienceProject/blob/main/scaler.sav", "rb"))
 loaded_scaler = joblib.load(open("scaler.sav", "rb"))
 
 # Function for fraud detection
